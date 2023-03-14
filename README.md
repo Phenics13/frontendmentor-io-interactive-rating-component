@@ -35,8 +35,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [github](https://github.com/Phenics13/frontendmentor-io-qr-code-component)
-- Live Site URL: [netlify](https://bucolic-gumdrop-cff5a1.netlify.app/)
+- Solution URL: [github](https://github.com/Phenics13/frontendmentor-io-interactive-rating-component)
+- Live Site URL: [netlify](https://idyllic-fox-e49ba7.netlify.app/)
 
 ## My process
 
