@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const BaseButton = styled.button`
   cursor: pointer;
   width: 100%;
+  padding: 13px 0;
+
+  font-size: 15px;
   font-weight: 700;
-  padding: 15px 0;
   letter-spacing: 0.125em;
 
   display: flex;
@@ -34,9 +36,6 @@ export const ButtonRadio = styled(BaseButton)`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-
-  font-size: 15px;
-  font-weight: 700;
 
   color: hsl(217, 12%, 63%);
   background-color: hsl(213, 19%, 18%);
