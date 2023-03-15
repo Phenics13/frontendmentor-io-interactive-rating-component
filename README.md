@@ -1,5 +1,9 @@
 # Frontend Mentor - Interactive rating component solution
 
+<div align="center">
+<img src="./solution/Interactive-rating-component-preview.GIF" alt="preview"/>
+</div>
+
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
