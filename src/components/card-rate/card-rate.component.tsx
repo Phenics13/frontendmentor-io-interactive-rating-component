@@ -51,6 +51,7 @@ const CardRate = () => {
                 : BUTTON_TYPES.radio
             }
             onClick={handleClick}
+            type="button"
             key={number}
           >
             {number}
