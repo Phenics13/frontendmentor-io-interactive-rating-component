@@ -1,22 +1,26 @@
 import styled from "styled-components";
 
 export const BaseButton = styled.button`
+  cursor: pointer;
   width: 100%;
-  padding: 10px 0;
-  margin-top: 10px;
+  font-weight: 700;
+  padding: 15px 0;
+  letter-spacing: 0.125em;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   color: hsl(0, 0%, 100%);
-  background-color: orange;
+  background-color: hsl(25, 97%, 53%);
+
   border: none;
-  border-radius: 15px;
+  border-radius: 22.5px;
+
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: orange;
+    color: hsl(25, 97%, 53%);
     background-color: hsl(0, 0%, 100%);
   }
 `;
@@ -27,16 +31,25 @@ export const ButtonText = styled.span`
 `;
 
 export const ButtonRadio = styled(BaseButton)`
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 
+  font-size: 15px;
+  font-weight: 700;
+
   color: hsl(217, 12%, 63%);
-  background-color: #272e38;
+  background-color: hsl(213, 19%, 18%);
+
+  span {
+    position: relative;
+    top: 2px;
+    left: 1px;
+  }
 
   &:hover {
     color: hsl(0, 0%, 100%);
-    background-color: orange;
+    background-color: hsl(25, 97%, 53%);
   }
 `;
 

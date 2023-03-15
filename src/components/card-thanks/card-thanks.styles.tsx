@@ -5,22 +5,25 @@ export const ThanksContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 30px;
 `;
 
-export const ThanksImage = styled.img``;
+export const ThanksImage = styled.img`
+  height: 108px;
+`;
+
+export const ThanksContent = styled.div``;
 
 export const ThanksTitle = styled.h1``;
 
 export const ThanksParagraph = styled.p``;
 
 export const SelectedNumberContainer = styled.div`
-  padding: 5px 12px;
+  padding: 5px 15px;
   font-size: 15px;
 
-  margin-top: 20px;
-
-  color: orange;
-  background-color: #272e38;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
   border-radius: 15px;
 `;
 

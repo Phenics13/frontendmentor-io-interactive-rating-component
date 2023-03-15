@@ -1,26 +1,37 @@
 import styled from "styled-components";
 
-export const StarContainer = styled.div`
-  margin-bottom: 10px;
+export const Form = styled.form`
+  height: 100%;
 
   display: flex;
-  width: min-content;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const StarContainer = styled.div`
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border-radius: 50%;
-  background-color: #272e38;
+  background-color: hsl(213, 19%, 18%);
 `;
 
 export const Star = styled.img`
-  margin: 15px;
   width: 17px;
+  height: min-content;
 `;
+
+export const CardContent = styled.div``;
 
 export const CardTitle = styled.h1``;
 
 export const CardParagraph = styled.p``;
 
 export const ButtonsContainer = styled.div`
-  margin-bottom: 20px;
-
   display: flex;
   justify-content: space-between;
 `;

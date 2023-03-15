@@ -1,10 +1,12 @@
-import { useContext, FormEvent } from "react";
+import { useContext, FormEvent, MouseEvent } from "react";
 
 import { CurrentNumberContext } from "../../context/current-number.context";
 
 import {
+  Form,
   StarContainer,
   Star,
+  CardContent,
   CardTitle,
   CardParagraph,
   ButtonsContainer,
@@ -23,40 +25,40 @@ const CardRate = () => {
     setSubmit(true);
   };
 
-  const handleClick = (event: any) => {
-    setCurrentNumber(parseInt(event.target.innerText));
+  const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
+    const btn = event.target as HTMLElement;
+    setCurrentNumber(parseInt(btn.innerText));
   };
 
   return (
-    <>
+    <Form onSubmit={handleSubmit}>
       <StarContainer>
         <Star className="star" src={starLogo} alt="starLogo" />
       </StarContainer>
-      <form onSubmit={handleSubmit}>
+      <CardContent>
         <CardTitle>How did we do?</CardTitle>
         <CardParagraph>
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </CardParagraph>
-        <ButtonsContainer>
-          {[1, 2, 3, 4, 5].map((number) => (
-            <Button
-              buttonType={
-                number === currentNumber
-                  ? BUTTON_TYPES.radio_active
-                  : BUTTON_TYPES.radio
-              }
-              onClick={handleClick}
-              type="button"
-              key={number}
-            >
-              {number}
-            </Button>
-          ))}
-        </ButtonsContainer>
-        <Button>Submit</Button>
-      </form>
-    </>
+      </CardContent>
+      <ButtonsContainer>
+        {[1, 2, 3, 4, 5].map((number) => (
+          <Button
+            buttonType={
+              number === currentNumber
+                ? BUTTON_TYPES.radio_active
+                : BUTTON_TYPES.radio
+            }
+            onClick={handleClick}
+            key={number}
+          >
+            {number}
+          </Button>
+        ))}
+      </ButtonsContainer>
+      <Button>Submit</Button>
+    </Form>
   );
 };
 

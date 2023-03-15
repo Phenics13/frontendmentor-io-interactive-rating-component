@@ -4,6 +4,7 @@ import { CurrentNumberContext } from "../../context/current-number.context";
 import {
   ThanksContainer,
   ThanksImage,
+  ThanksContent,
   ThanksTitle,
   ThanksParagraph,
   SelectedNumberContainer,
@@ -20,11 +21,13 @@ const CardThanks = () => {
       <SelectedNumberContainer>
         <SelectedNumber>{`You selected ${currentNumber} out of 5`}</SelectedNumber>
       </SelectedNumberContainer>
-      <ThanksTitle>Thank you!</ThanksTitle>
-      <ThanksParagraph>
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </ThanksParagraph>
+      <ThanksContent>
+        <ThanksTitle>Thank you!</ThanksTitle>
+        <ThanksParagraph>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </ThanksParagraph>
+      </ThanksContent>
     </ThanksContainer>
   );
 };
