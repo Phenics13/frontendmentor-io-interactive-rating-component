@@ -51,6 +51,11 @@ export const ButtonRadio = styled(BaseButton)`
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
   }
+
+  @media screen and (max-width: 425px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const ButtonRadioActive = styled(ButtonRadio)`

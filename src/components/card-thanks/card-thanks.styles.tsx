@@ -10,6 +10,10 @@ export const ThanksContainer = styled.div`
 
 export const ThanksImage = styled.img`
   height: 108px;
+
+  @media screen and (max-width: 425px) {
+    height: 96px;
+  }
 `;
 
 export const ThanksContent = styled.div``;

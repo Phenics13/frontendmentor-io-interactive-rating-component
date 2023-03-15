@@ -18,6 +18,11 @@ export const StarContainer = styled.div`
 
   border-radius: 50%;
   background-color: hsl(213, 19%, 18%);
+
+  @media screen and (max-width: 425px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export const Star = styled.img`

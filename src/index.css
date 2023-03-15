@@ -39,3 +39,14 @@ p {
   line-height: 24px;
   color: hsl(217, 12%, 63%);
 }
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
